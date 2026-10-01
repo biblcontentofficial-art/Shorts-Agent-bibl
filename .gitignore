@@ -1,0 +1,33 @@
+# 작업 데이터·결과물 (개인·클라이언트 영상 — 절대 커밋 X)
+projects/
+_workspace/
+output/
+
+# 외부 의존성 (npm install / npx skills add 로 받음)
+node_modules/
+vendor/
+.claude/skills/*
+!.claude/skills/shorts-*/
+
+# 미디어·폰트 (라이선스상 재배포 X — assets/*/CREDITS.md, README 참고)
+*.mp4
+*.mov
+*.m4v
+*.mkv
+*.wav
+*.mp3
+*.m4a
+*.aac
+assets/fonts/
+*.otf
+*.ttf
+
+# 파이썬 캐시
+__pycache__/
+*.pyc
+
+# 백업
+*_prev*
+
+# macOS
+.DS_Store

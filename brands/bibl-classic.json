@@ -1,0 +1,193 @@
+{
+ "_주석": "비블 쇼츠 구 템플릿(bibl-classic) — 2026-07-17 구도·07-24 자막 v3.1, Paperlogy 제목(1줄 흰·2줄 노랑)·영상 밴드 1080x1030@532. 2026-09-19 최신 작업(14_유튜브커뮤니티)은 template-v2 를 썼으므로 기본은 bibl(v2). 사용자가 구 템플릿을 원할 때만.",
+ "channel": "비블",
+ "canvas": {
+  "w": 1080,
+  "h": 1920,
+  "bg": "#000000"
+ },
+ "layout": {
+  "mode": "band",
+  "band": {
+   "x": 0,
+   "y": 532,
+   "w": 1080,
+   "h": 1030
+  },
+  "_crop": "얼굴 높이 기준 확대: 크롭 높이 = 얼굴높이×3.6 (원본 높이의 0.667~0.894), 얼굴 중심이 크롭 위 36%. bottom_limit = 원본 번인 자막 위(0.896).",
+  "crop": {
+   "mode": "face_scale",
+   "face_h_mult": 3.6,
+   "min_h": 0.667,
+   "max_h": 0.894,
+   "face_y": 0.36,
+   "bottom_limit": 0.896
+  }
+ },
+ "title": {
+  "font": "Paperlogy-9Black.ttf",
+  "family": "Paperlogy9",
+  "weight": 900,
+  "size_rule": [
+   [
+    8,
+    101
+   ],
+   [
+    10,
+    96
+   ],
+   [
+    999,
+    91
+   ]
+  ],
+  "min_size": 63,
+  "shrink_step": 3.4,
+  "max_w": 1000,
+  "anchor": "ascender",
+  "y": 250,
+  "pitch": 1.178,
+  "colors": [
+   "#FFFFFF",
+   "#FFCC22"
+  ],
+  "stroke": {
+   "w": 3,
+   "color": "#141414"
+  },
+  "shadow": {
+   "x": 3,
+   "y": 3,
+   "blur": 0,
+   "color": "rgba(0,0,0,0.43)"
+  },
+  "band": null,
+  "split": "balance"
+ },
+ "captions": {
+  "chunker": "v31",
+  "max_chars": 8,
+  "max_line": 9,
+  "font": "NotoSansCJKkr-Black.otf",
+  "family": "NotoCJKBlack",
+  "weight": 900,
+  "size": 80,
+  "color": "#FFFFFF",
+  "stroke": {
+   "w": 7,
+   "color": "#101010"
+  },
+  "shadow": {
+   "x": 3,
+   "y": 3,
+   "blur": 0,
+   "color": "rgba(0,0,0,0.5)"
+  },
+  "anchor": "middle",
+  "y": 1170,
+  "line_pitch": 132,
+  "max_w": 990,
+  "two_line": "v31",
+  "strip": ".?!,\"'“”‘’…~",
+  "gap_fill": 0.0,
+  "style": "brand",
+  "accent": "#FFCC22"
+ },
+ "watermark": {
+  "text": "비블 bibl",
+  "font": "MaruBuri-SemiBold.otf",
+  "family": "MaruBuri",
+  "weight": 600,
+  "size": 52,
+  "color": "#CFCFCF",
+  "skew": -14,
+  "anchor": "middle",
+  "y": 1617,
+  "shadow": {
+   "x": 1,
+   "y": 1,
+   "blur": 0,
+   "color": "rgba(0,0,0,0.35)"
+  },
+  "x_offset": -21
+ },
+ "signature": null,
+ "graphics": {
+  "_주석": "키워드 오버레이는 비블 확정 규칙상 기본 꺼짐(2026-07-16 '필요 없어'). 사용자가 요청할 때만 beats 에 넣는다.",
+  "font": "Paperlogy-9Black.ttf",
+  "family": "Paperlogy9",
+  "weight": 900,
+  "text": "#FFFFFF",
+  "accent": "#FFCC22",
+  "ink": "#0A0A0A",
+  "card_bg": "rgba(10,10,10,0.82)",
+  "zone": [
+   60,
+   1655,
+   1020,
+   1885
+  ],
+  "alt_zone": [
+   60,
+   560,
+   1020,
+   760
+  ],
+  "default_motion_level": 0
+ },
+ "audio": {
+  "lufs": -14.0,
+  "tp": -1.5,
+  "tail_fade": 0.22
+ },
+ "encode": {
+  "fps": "30",
+  "crf": 19,
+  "bframes": 0,
+  "audio_bitrate": "192k",
+  "hf_crf": 12
+ },
+ "clip": {
+  "min": 30,
+  "max": 75,
+  "ideal": [
+   40,
+   60
+  ]
+ },
+ "glossary": [
+  "비블",
+  "쇼츠",
+  "알고리즘",
+  "썸네일",
+  "구독자",
+  "조회수",
+  "수익화",
+  "브랜딩",
+  "콘텐츠",
+  "유튜브",
+  "스레드",
+  "인스타그램",
+  "CTR",
+  "리텐션"
+ ],
+ "corrections": {
+  "클릭력": "클릭률",
+  "이탈류": "이탈률",
+  "썸네이": "썸네일",
+  "컨텐츠": "콘텐츠",
+  "홀모지": "호르모지",
+  "기터브": "깃허브",
+  "채치 PT": "챗GPT",
+  "채찍PT": "챗GPT",
+  "비브리라고": "비블이라고",
+  "오픈 AI": "오픈AI"
+ },
+ "deliver": {
+  "folder": null,
+  "name": "{title}",
+  "sns": false,
+  "_주석": "업로드 감시 폴더(쇼츠 자동 업로드)는 사용자가 지정할 때만 채운다. 비우면 projects/<p>/deliver/ 에만 둔다."
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "_주석": "비블 쇼츠 template-v3 (2026-09-28 사용자 지시, 레퍼런스 youtube.com/shorts/Yfb2vDAgyZQ 썸네일 1080x1920 실측): 영상 9:16 꽉 채움(얼굴 가운데) · 가운데 떠 있는 제목 상자(검정 #1C1C1C 둥근 모서리 20, 흰 글자 2줄 — 처음 베이지에서 사용자 지시로 변경, 상자 y≈1210–1420 · 폭 글자에 맞춤) · 그 위 자막(흰색, 60px) · 아래 'bibl' 붓글씨 로고(Brownhill Script 느낌 — 사용자 제공 이미지를 흰색으로, assets/brand/bibl_logo_script.png). v2(위 바·밴드)는 bibl, 구 템플릿은 bibl-classic. · 2026-09-28 분할 40/60(위 B-roll 0~768 · 아래 인물 0.70배 넓은 크롭) · 제목 상자 #2C2929(PANTONE Meteorite, 안쪽 선·그림자) · 분할 때 제목 +174.7·자막 +195(인물 아래쪽) · 자막 팝·빨강 마커·강조 큐 1.1배 · 훅 빨강 키워드 상자 · 패널 느린 밀기·그림자 · 효과음 자동 — shorts-designer 안 B(projects/bibl_ex1/design/)",
+ "extends": "bibl",
+ "layout": {
+  "mode": "full",
+  "band": {
+   "x": 0,
+   "y": 0,
+   "w": 1080,
+   "h": 1920
+  },
+  "crop": {
+   "mode": "full_height"
+  },
+  "_crop": "원본 세로 전체 9:16(1440p 원본이면 810x1440 → 1080x1920), 샷마다 얼굴 x 가운데"
+ },
+ "title": {
+  "size_rule": [
+   [
+    999,
+    66
+   ]
+  ],
+  "min_size": 52,
+  "shrink_step": 2,
+  "max_w": 712,
+  "fit_ignores_tracking": false,
+  "anchor": "first_middle",
+  "y": 1276,
+  "pitch": 1.2,
+  "pitch_int": true,
+  "tracking": -0.02,
+  "xscale": 1.0,
+  "colors": [
+   "#FFFFFF",
+   "#FFFFFF"
+  ],
+  "stroke": null,
+  "shadow": null,
+  "box": {
+   "fill": "#2C2929",
+   "radius": 20,
+   "pad_x": 44,
+   "pad_y": 30,
+   "half": 0.52,
+   "shadow": {
+    "x": 0,
+    "y": 8,
+    "blur": 22,
+    "color": "rgba(0,0,0,0.45)"
+   },
+   "stroke": {
+    "w": 1.5,
+    "color": "rgba(255,255,255,0.12)",
+    "inset": true,
+    "_뜻": "상자 안쪽 가장자리 1.5px 선(흰 12%). 검정 티셔츠 위에서 #2C2929 상자 윤곽이 묻히지 않게(R3)"
+   }
+  },
+  "_max_w": "880 → 712: 상자 오른쪽 끝 ≤ 940(오른쪽 버튼 줄 x940~ 에 글자 안 들어가게). 지금 8편 제목 최장 695.7px(j6 '유료도 별거 없어 보입니다')라 크기 변화 없음",
+  "_색": "채움 #2C2929 불투명 1.0(사용자 hex 그대로, 투명도 없음) · 글자 순백 #FFFFFF(대비 14.4:1 — 따뜻한 흰색 #F6F2EC 도 봤으나 바로 위 흰 자막과 색이 갈라져 버림) · 빨강 글자·빨강 띠 넣지 않음(#E8322B 글자는 이 바탕에서 대비 2.8:1 로 안 읽힘, 빨강은 '지금 말하는 것' 전용)",
+  "_y": "2줄: 줄 가운데 1276·1355 → 상자 1211.7–1419.3(변경 없음). 분할 중 +174.7 → 1386.4–1594.0"
+ },
+ "captions": {
+  "size": 60,
+  "y": 1130,
+  "line_pitch": 70,
+  "anchor": "middle",
+  "max_w": 960,
+  "tracking": -0.02,
+  "xscale": 1.0,
+  "stroke": {
+   "w": 1.5,
+   "color": "#111111"
+  },
+  "shadow": {
+   "x": 0,
+   "y": 3,
+   "blur": 8,
+   "color": "rgba(0,0,0,0.8)"
+  },
+  "style": "pop",
+  "accent": "#E8322B",
+  "feel": "snappy",
+  "pop": {
+   "from_scale": 0.94,
+   "from_opacity": 0.6,
+   "dur": 0.12,
+   "ease": "power3.out",
+   "_뜻": "큐마다 아주 작은 팝. 지금 엔진 pop 은 0.9·불투명 0.2·0.14초·feel(기본 bouncy = back.out 1.8)이라 단어 단위 큐(평균 0.73초)에서 통통 튐 — R4 전까지는 short.json captions.feel = 'snappy' 로 대신"
+  },
+  "emphasis_mode": "marker",
+  "marker": {
+   "color": "#E8322B",
+   "dur": 0.25,
+   "ease": "power2.out",
+   "chars_only": true,
+   "_뜻": "강조 구절 글자 범위만 빨강 마커(조사 제외: '증거가' → '증거'), 글자는 흰색 유지(흰/빨강 대비 5.1:1). R6"
+  },
+  "emph_scale": 1.1,
+  "emph_pop": {
+   "from_scale": 0.86,
+   "dur": 0.16,
+   "ease": "back.out(1.6)",
+   "_뜻": "강조 구절이 든 큐만 66px + 조금 큰 팝(R5)"
+  },
+  "_y": "전체 1130(잉크 1105–1160) · 분할 중 +195 → 1325(잉크 1300–1355)"
+ },
+ "watermark": {
+  "image": "bibl_logo_script.png",
+  "h": 128,
+  "y": 1530,
+  "alt": "bibl",
+  "shadow": {
+   "x": 0,
+   "y": 2,
+   "blur": 6,
+   "color": "rgba(0,0,0,0.55)"
+  },
+  "_주석": "변경 없음(1466–1594). 분할 중에는 숨김(split.hide_logo) — 제목·자막이 이 자리로 내려온다"
+ },
+ "signature": null,
+ "split": {
+  "line": 768,
+  "panel": "#0C0C0C",
+  "face_target": 945,
+  "dur": 0.45,
+  "ease": "power3.inOut",
+  "logo_fade": 0.2,
+  "merge_gap": 2.0,
+  "hide_logo": true,
+  "min_shift": 250,
+  "max_shift": 900,
+  "person_scale": 0.7,
+  "title_shift": 174.7,
+  "cap_shift": 195.0,
+  "title_scale": 1.0,
+  "cap_scale": 1.0,
+  "edge": {
+   "kind": "shadow",
+   "px": 32,
+   "alpha": 0.45,
+   "_뜻": "패널 아래 끝(768)에서 영상 쪽으로 32px 검정 45%→0% 그림자. 패널과 같이 움직임(R2)"
+  },
+  "panel_push": {
+   "max": 1.04,
+   "rate_per_s": 0.008,
+   "origin": [
+    540,
+    430
+   ],
+   "ease": "none",
+   "group_continuous": true,
+   "_뜻": "카드마다 1.00 → 1+min(0.04, 0.008×카드 길이) 느린 밀기(R8)"
+  },
+  "text_anchor": {
+   "box_bottom": 1594,
+   "cap_center_above_box_top": 61.4,
+   "_뜻": "1줄 제목일 때도 상자 아래 끝 1594·자막 간격 유지(R12). 2줄 제목이면 위 title_shift/cap_shift 와 같은 결과"
+  },
+  "_계산": "face_target = 창 안 얼굴 박스 위 끝 중앙값이 옮겨질 자리. sh = max(945 − fy×0.70, 1920×0.30=576) → 8편 sh 601~631, 인물 영상 아래 끝 1945~1975(바닥 안 빔). 제목 상자 1212–1419 → 1386.4–1594.0, 자막 가운데 1130 → 1325, 로고 0.2초 안에 사라진 뒤 그 자리에 제목 상자가 들어온다",
+  "_규칙": "분할은 한 편에 한 구간(훅 얼굴 → 첫 B-roll 순간부터 끝까지, 펀치라인이 얼굴이어야 하면 그 직전 한 번만 복귀) — 기존 확정 유지. 분할 중 줌(펀치인·푸시) 금지",
+  "_주석": "2026-09-28 분할 40/60(사용자: 아래 인물 60%·위 B-roll 40%, 분할 때 제목·자막은 인물 아래쪽) — shorts-designer 안 B. 이전 값: line 980 · text_shift −336 · face_target 1112 · person_scale 1.0 · dur 0.4 power2.inOut",
+  "text_shift": 174.7,
+  "_text_shift": "예전 엔진 호환용 기본값(지금 엔진은 title_shift·cap_shift 가 있으면 그것을 씀)"
+ },
+ "graphics": {
+  "font": "NotoSansCJKkr-Black.otf",
+  "family": "NotoCJKBlack",
+  "weight": 900,
+  "text": "#FFFFFF",
+  "accent": "#E8322B",
+  "ink": "#0A0A0A",
+  "card_bg": "rgba(12,12,12,0.82)",
+  "_주석": "훅(전체 화면) 큰 키워드 카드 전용. 지금 bibl-v3 는 bibl-classic 값(노랑 #FFCC22·Paperlogy·zone 1600~1690 쇼츠 UI 안)을 물려받고 있어 반드시 덮어쓴다 — accent 가 캡션 마커 색도 정한다(compose: marker_color = graphics.accent) · R7(kw_style 'box') 구현 전에는 'box' 를 모르는 엔진이 외곽선 없는 빨강 글자로 그려 안 읽힌다 → 그 전까지는 kw_style 'band'(기존 빨강 기울어진 띠 + 흰 글자)로 임시 사용",
+  "zone": [
+   90,
+   1070,
+   990,
+   1190
+  ],
+  "alt_zone": null,
+  "kw_style": "box",
+  "kw_box": {
+   "radius_em": 0.14,
+   "pad_x_em": 0.22,
+   "pad_y_em": 0.14,
+   "shadow": {
+    "x": 0,
+    "y": 6,
+    "blur": 10,
+    "color": "rgba(0,0,0,0.5)"
+   }
+  },
+  "kw_size": 96,
+  "kw_min_size": 72,
+  "kw_max_w": 700,
+  "kw_replaces_caption": true,
+  "default_motion_level": 1
+ },
+ "sfx_auto": {
+  "_주석": "쇼츠 효과음 자동 배치(2026-09-28 사용자 '지루하지 않게 효과음 더 타이트하게' → shorts-designer 규칙). compose.auto_sfx 가 패널 새 그림·분할 진입·카드 바뀜·자막 강조·키워드 상자를 모아 map 으로 소리를 정하고 density 로 솎는다. short.json sfx(손) 가 먼저, short.json sfx_auto:false 면 끔 · 2026-09-28 사용자 '띠링 효과음 말고 마우스 클릭음으로' → 띵·차임·반짝(ping/ding/sparkle)을 딸깍(click-t)으로(substitute 가 손으로 정한 소리에도 적용)",
+  "map": {
+   "capture": "click-t",
+   "chapter": null,
+   "trend": "tick",
+   "chip": "click-soft-t",
+   "check": "tick",
+   "accent": "click-t",
+   "minor": "click-soft-t",
+   "transition": null,
+   "button": "click-t",
+   "appear": "click-soft-t",
+   "bell": null,
+   "card_change": "click-t",
+   "split_in": "click-t",
+   "split_out": null,
+   "caption_hit": "tick",
+   "caption_hit_accent": "click-t",
+   "keyword": "click-t",
+   "conclusion": "click-t",
+   "positive": "click-t",
+   "negative": "wrong-t",
+   "state": "click-soft-t",
+   "state_accent": "click-t",
+   "typing": "tick",
+   "extra": null
+  },
+  "density": {
+   "min_gap": 0.45,
+   "same_sound_min_gap": 0.9,
+   "max_per_8s": 4,
+   "ping_min_gap": 6.0,
+   "once_per_short": [
+    "ding-t",
+    "sparkle-t",
+    "wrong-t"
+   ],
+   "no_sfx_last_s": 0.3,
+   "fill_gap": 2.6,
+   "fill_min_gap": 0.8
+  },
+  "vol": {
+   "click-t": 0.85,
+   "click-soft-t": 0.8,
+   "tick": 0.8,
+   "ping-t": 1.0,
+   "ding-t": 1.0,
+   "sparkle-t": 0.8,
+   "wrong-t": 0.7
+  },
+  "banned": [
+   "whoosh",
+   "whoosh-big",
+   "pop",
+   "glitch",
+   "riser",
+   "impact"
+  ],
+  "substitute": {
+   "ping-t": "click-t",
+   "ding-t": "click-t",
+   "sparkle-t": "click-t"
+  }
+ }
+}

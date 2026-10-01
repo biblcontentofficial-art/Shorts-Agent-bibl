@@ -1,0 +1,99 @@
+{
+ "_주석": "비블(@bibl_youtube) 쇼츠 현행 템플릿 = template-v2 (2026-09-03 레퍼런스 youtube.com/shorts/E9OjCas3O5s). 근거: 최신 작업 01_비블 BiBl/00_비블 유튜브/999_쇼츠/14_유튜브커뮤니티(2026-09-19, 5편) 그래픽 PNG 실측과 Premiere Pro/engine/shorts_premiere.py(--template-v2). 구 템플릿은 bibl-classic.",
+ "extends": "bibl-classic",
+ "layout": {
+  "mode": "band",
+  "band": {
+   "x": 0,
+   "y": 533,
+   "w": 1080,
+   "h": 1046
+  },
+  "_band": "위 바 533 고정, 영상은 크롭 원비율(최신 작업 1650:1598 → 1046). 얼굴 기준 크롭은 이 비율로.",
+  "natural_band": {
+   "cap_frac": 0.7,
+   "wm": "bottom_center",
+   "min_h": 480,
+   "max_h": 1267,
+   "_주석": "2인 대담 등 크롭이 가로로 넓을 때 원비율 밴드(비블 2026-08-06 확정 '영상 비율을 깨면서까지 틀을 맞출 필요 없음'). v2 규칙: 밴드 y533 고정, 자막 = 밴드 70% 지점, 워터마크 = 아래 여백 가운데"
+  }
+ },
+ "title": {
+  "font": "NotoSansCJKkr-Bold.otf",
+  "family": "NotoCJKBold",
+  "weight": 700,
+  "size_rule": [
+   [
+    999,
+    100
+   ]
+  ],
+  "min_size": 70,
+  "shrink_step": 4,
+  "max_w": 1000,
+  "fit_ignores_tracking": true,
+  "anchor": "first_middle",
+  "y": 330,
+  "pitch": 1.18,
+  "pitch_int": true,
+  "tracking": -0.04,
+  "xscale": 0.93,
+  "colors": [
+   "#FFCC22",
+   "#FFFFFF"
+  ],
+  "stroke": {
+   "w": 2,
+   "color": "#141414"
+  },
+  "shadow": {
+   "x": 6,
+   "y": 6,
+   "blur": 6,
+   "color": "rgba(0,0,0,0.9)"
+  },
+  "band": null,
+  "split": "balance"
+ },
+ "captions": {
+  "font": "NotoSansCJKkr-Bold.otf",
+  "family": "NotoCJKBold",
+  "weight": 700,
+  "size": 82,
+  "tracking": -0.04,
+  "xscale": 0.93,
+  "stroke": {
+   "w": 2,
+   "color": "#141414"
+  },
+  "shadow": {
+   "x": 6,
+   "y": 6,
+   "blur": 6,
+   "color": "rgba(0,0,0,0.9)"
+  },
+  "anchor": "middle",
+  "y": 1338,
+  "line_pitch": 100,
+  "max_w": 980,
+  "two_line": "v31",
+  "_y": "영상 밴드 77% 지점(최신 작업 cap_frac 0.77, 기본 0.70이면 1265). 얼굴이 크면 short.json captions.y 로 조정"
+ },
+ "watermark": {
+  "y": 1749
+ },
+ "graphics": {
+  "zone": [
+   60,
+   1600,
+   1020,
+   1690
+  ],
+  "alt_zone": [
+   60,
+   40,
+   1020,
+   240
+  ]
+ }
+}
